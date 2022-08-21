@@ -7,7 +7,7 @@
    <title>Choose Your Best Player From Bangladesh</title>
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-900 text-red-50">
    
    <!-- header part of webpage -->
    <header>
@@ -37,7 +37,7 @@
                <button id="btn-sabbir" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
             </div>
             <div>
-               <h1 class="font-extrabold text-2xl">Selected-Player</h1>
+               <h1 class="font-extrabold text-2xl">Selected-5 Player</h1>
                <ol id="selected-item">
                   <li>1 <span id="selected-one"></span></li>
                   <li>2 <span id="selected-two"></span></li>
@@ -60,6 +60,21 @@
                <img src="images/nasir4.jpg" alt="">
                <h4 class="text-center font-extrabold">Nasir Hossain</h4>
                <button class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
+            </div>
+            <div class="bg-lime-900">
+               <h1 class="text-center font-bold mb-2">Budget</h1>
+               <span>per player</span>
+               <input class="text-black" type="text" value="1000">
+               <button class="bg-orange-700 w-full mt-2">Calculate</button>
+               <span class="mb-4">Player expenses</span> <span>$</span>
+               <br>
+               <span>Manager</span>
+               <input class="mt-2" type="text">
+               <br>
+               <span>Coach</span>
+               <input class="mt-2" type="text">
+               <button class="bg-orange-700 w-full mt-2">Calculate total</button>
+               <p>Total $</p>
             </div>
          </div>
          
