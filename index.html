@@ -18,50 +18,55 @@
    </header>
 
    <!-- Main section of webpage -->
-   <main>
+   <main class="mb-56">
       <section class="">
-         <div class="grid grid-cols-4 gap-4 w-full">
+         <div class="grid grid-cols-4 gap-4 w-9/12 mx-auto">
             <div>
                <img src="images/mashrafi.jpg" alt="">
                <h4 id="mashrafi-header" class="text-center font-extrabold">Mashrafi Bin Murtaza</h4>
-               <button id="btn-mashrafi" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
+               <button onclick="addToCart(this)" id="btn-mashrafi" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
             </div>
+
             <div>
                <img src="images/sakib2.jpg" alt="">
                <h4 id="sakib-header" class="text-center font-extrabold">Sakib al hasan</h4>
-               <button id="btn-sakib" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
+               <button onclick="addToCart(this)" id="btn-sakib" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
             </div>
+
             <div>
                <img src="images/sabbir3.jpg" alt="">
                <h4 id="sabbir-header" class="text-center font-extrabold">Sabbir Rahman</h4>
-               <button id="btn-sabbir" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
+               <button onclick="addToCart(this)" id="btn-sabbir" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
             </div>
+
+
             <div>
                <h1 class="font-extrabold text-2xl">Selected-5 Player</h1>
                <ol id="selected-item">
-                  <li>1 <span id="selected-one"></span></li>
-                  <li>2 <span id="selected-two"></span></li>
-                  <li>3 <span id="selected-three"></span></li>
-                  <li>4 <span id="selected-four"></span></li>
-                  <li>5 <span id="selected-five"></span></li>
+                  
                </ol>
             </div>
+
+            
             <div>
                <img src="images/Mehedi hasan miraz 2.jpg" alt="">
                <h4 id="mehedi-header" class="text-center font-extrabold">Mehedi Hasan Miraz</h4>
-               <button id="btn-mehedi" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
+               <button onclick="addToCart(this)" id="btn-mehedi" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
             </div>
+
             <div>
                <img src="images/rubel-hossain2.jpg" alt="">
                <h4 id="rubel-header" class="text-center font-extrabold">Rubel hossain</h4>
-               <button id="btn-rubel" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
+               <button onclick="addToCart(this)" id="btn-rubel" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
             </div>
+
             <div>
                <img src="images/nasir4.jpg" alt="">
-               <h4 class="text-center font-extrabold">Nasir Hossain</h4>
-               <button class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
+               <h4 id="nasir-header" class="text-center font-extrabold">Nasir Hossain</h4>
+               <button onclick="addToCart(this)" id="btn-nasir" class="bg-teal-700 text-orange-50 px-6 py-2 w-full">Select</button>
             </div>
-            <div class="bg-lime-900">
+            
+            <!-- <div class="bg-lime-900">
                <h1 class="text-center font-bold mb-2">Budget</h1>
                <span>per player</span>
                <input class="text-black" type="text" value="1000">
@@ -75,14 +80,18 @@
                <input class="mt-2" type="text">
                <button class="bg-orange-700 w-full mt-2">Calculate total</button>
                <p>Total $</p>
-            </div>
+            </div> -->
          </div>
          
       </section>
-
-      
    </main>
 
+   <hr class="mb-8">
+   <section>
+      <footer class="text-center">
+         <p>Copyright @ 2022 All Rights Reserved.</p>
+      </footer>
+   </section>
    <script src="script/select.js"></script>
 </body>
 </html>
