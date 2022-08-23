@@ -1,3 +1,7 @@
+// arrary
+const playerArray = [];
+
+
 // arrary added items 2
 function playerDisplay(playerList) {
 
@@ -20,13 +24,6 @@ function playerDisplay(playerList) {
 }
 
 
-
-// arrary
-const playerArray = [];
-
-
-
-
 //    Object push in arrary section 1
 function addToCart(element) {
    const playerName = element.parentNode.children[0].innerText;
@@ -34,7 +31,7 @@ function addToCart(element) {
    element.disabled = true;
 
    const playerObj = {
-       playerName: playerName
+       playerName: playerName,
    }
 
    playerArray.push(playerObj);
@@ -44,7 +41,13 @@ function addToCart(element) {
        document.getElementById('Select-players').innerText = playerArray.length;
 
    }
+
+
    playerDisplay(playerArray);
+
+
+   console.log(playerArray);
+   console.log(playerObj);
 
    // added calculate button functionality
    document.getElementById('calculate').addEventListener('click', function click() {
